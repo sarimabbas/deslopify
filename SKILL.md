@@ -8,7 +8,7 @@ description: Find and remove common code, user interface, and writing smells. Us
 For each code and UX smell below, use one subagent each to eliminate it.
 Use the same rule for each writing smell.
 
-Inspect the product or draft before you make changes. Report only the smells that you find. Give each subagent one smell and the relevant files. Ask it to make a focused change. Review each change against the purpose and existing style. Check UI changes at the supported screen sizes. Read writing changes in context. Keep the author's point of view and meaning. Do not treat these signs as proof of AI use. Do not remove a useful feature or phrase only because it matches a pattern below.
+Inspect the product or draft before you make changes. Report only the smells that you find. Give each subagent one smell and the relevant files. Ask it to make a focused change. Review each change against the purpose and existing style. Check UI changes at the supported screen sizes. Test the main task with a keyboard. Read writing changes in context. Keep the author's point of view and meaning. Do not treat these signs as proof of AI use. Do not remove a useful feature or phrase only because it matches a pattern below.
 
 Use this format for each finding and its repair. Omit the image when it adds no information.
 
@@ -62,7 +62,7 @@ Description: Check whether the font fits the product and remains easy to read. D
 
 ## Redundant text
 
-Description: Find text that repeats the brief, the build method, or a fact that the user already knows. Remove it or replace it with information that helps the user act.
+Description: Find text or code comments that repeat the brief, build choices, or instructions to the agent. Remove them when they do not help the reader act or maintain the code.
 
 —
 
@@ -74,7 +74,7 @@ Description: Find blur and translucent panels that reduce clarity. Use solid sur
 
 ## Generic claims and hype
 
-Description: Find broad claims, stock slogans, and welcome text that give no useful information. Name the task, result, or next action in plain words. Make tool screens useful before you make them promotional.
+Description: Find broad claims, stock slogans, long introductions, and welcome text that give no useful information. Name the task, result, or next action in plain words. Make the main action easy to find.
 
 —
 
@@ -111,5 +111,47 @@ Description: Find forced lists of three, repeated contrasts, and sudden bullet l
 ## Model self-reference
 
 Description: Find phrases that say the writer is a language model. Remove them from user-facing text.
+
+—
+
+## Unclear task flow
+
+Description: Find screens where users cannot see the main task or the next step. Put related information together. Remove decoration that blocks navigation or action. Check that a user can finish the task.
+
+—
+
+## Inconsistent controls
+
+Description: Compare buttons, fields, spacing, and headings with the product's design rules. Use the same style for the same function. Make the primary action clear.
+
+—
+
+## Hard-to-read labels
+
+Description: Find long strings in all caps, wide letter spacing, or small type. Use a readable case, size, and spacing. Keep uppercase labels when they fit the design and remain clear.
+
+—
+
+## Hidden content
+
+Description: Open menus, answers, and other interactive content. Check that text stays visible above its background. Fix clipping and contrast in each supported browser and screen size.
+
+—
+
+## Distracting motion
+
+Description: Find effects that fade, move, or restart while the user reads or works. Remove motion that has no clear purpose. Keep motion that explains a change or helps navigation.
+
+—
+
+## Excess containers and metrics
+
+Description: Find cards inside cards, unused statistics, and status blocks that do not support a task. Simplify the layout. Keep data and grouping that help a decision.
+
+—
+
+## Mobile and keyboard failures
+
+Description: Check narrow screens for clipped navigation, text, and code blocks. Check focus order and visible focus with a keyboard. Make long content scroll inside its area when needed.
 
 —
