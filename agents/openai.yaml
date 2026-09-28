@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deslopify"
+  short_description: "Placeholder for future deslopify instructions"
+  default_prompt: "Use $deslopify for this task."
