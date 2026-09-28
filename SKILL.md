@@ -11,6 +11,7 @@ Use the same rule for each writing smell.
 Inspect the product or draft before you make changes. Report only the smells that you find. Give each subagent one smell and the relevant files. Ask it to make a focused change. Review each change against the purpose and existing style. Check UI changes at the supported screen sizes. Test the main task with a keyboard. Read writing changes in context. Keep the author's point of view and meaning. Do not treat these signs as proof of AI use. Do not remove a useful feature or phrase only because it matches a pattern below.
 
 Use this format for each finding and its repair. Omit the image when it adds no information.
+The images in `assets/` show examples of the first nine UI smells. Open an image when the written description is unclear.
 
 Title
 Description
@@ -22,11 +23,15 @@ Optional image
 
 Description: Find gradients that have no clear purpose. Remove repeated gradients from buttons and backgrounds. Keep a gradient if it helps the user see state or hierarchy.
 
+![Example of repeated purple gradients](assets/gradients.webp)
+
 —
 
 ## Too many colours
 
 Description: Find colours that have no consistent meaning. Use a small palette. Give each status and action a stable colour. Check contrast after the change.
+
+![Example of unrelated colours](assets/colours.webp)
 
 —
 
@@ -34,11 +39,15 @@ Description: Find colours that have no consistent meaning. Use a small palette. 
 
 Description: Find animated badges and labels that state the obvious. Remove them when the state cannot change or gives no useful information. Keep motion only when it signals a real change.
 
+![Example of a pulsing status badge](assets/pulsing-badge.webp)
+
 —
 
 ## Fingernail cards
 
 Description: Find cards with a small coloured tab or bar on the edge. Remove the decoration when it has no meaning. Use a clear label or layout if the cards need distinction.
+
+![Example of cards with small edge tabs](assets/fingernail-card.webp)
 
 —
 
@@ -46,11 +55,15 @@ Description: Find cards with a small coloured tab or bar on the edge. Remove the
 
 Description: Find emoji that do not help the user understand an action or state. Remove them from labels, headings, and status text. Use a consistent icon only when needed.
 
+![Example of excess emoji in a UI](assets/emoji.webp)
+
 —
 
 ## Misaligned elements
 
 Description: Check icons, SVGs, art, labels, and list items. Align them to the same grid and baseline. Check the layout at narrow and wide screen sizes.
+
+![Example of misaligned list elements](assets/alignment.webp)
 
 —
 
@@ -58,17 +71,23 @@ Description: Check icons, SVGs, art, labels, and list items. Align them to the s
 
 Description: Check whether the font fits the product and remains easy to read. Do not use Inter or JetBrains Mono only because they are common defaults. Remove decorative code marks such as `//` when they have no meaning.
 
+![Example of decorative code marks in headings](assets/font.webp)
+
 —
 
 ## Redundant text
 
 Description: Find text or code comments that repeat the brief, build choices, or instructions to the agent. Remove them when they do not help the reader act or maintain the code.
 
+![Example of redundant screen copy](assets/redundant-text.webp)
+
 —
 
 ## Glass effects without purpose
 
 Description: Find blur and translucent panels that reduce clarity. Use solid surfaces when they improve contrast and reading. Keep a glass effect only when it supports the design and remains accessible.
+
+![Example of translucent glass panels](assets/glass.webp)
 
 —
 
