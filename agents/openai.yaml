@@ -1,4 +1,4 @@
 interface:
   display_name: "Deslopify"
-  short_description: "Find and fix common UI and copy smells"
-  default_prompt: "Use $deslopify to review and improve this app."
+  short_description: "Find and fix UI and writing smells"
+  default_prompt: "Use $deslopify to review this app or draft."
