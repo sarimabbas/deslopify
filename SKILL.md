@@ -110,6 +110,6 @@ Description: Find forced lists of three, repeated contrasts, and sudden bullet l
 
 ## Model self-reference
 
-Description: Find phrases that say the writer is a language model. Remove them from user-facing text when they do not answer the user's question. Keep necessary disclosure.
+Description: Find phrases that say the writer is a language model. Remove them from user-facing text.
 
 —
