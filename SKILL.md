@@ -8,7 +8,7 @@ description: Find and remove common code, user interface, and writing smells. Us
 For each code and UX smell below, use one subagent each to eliminate it.
 Use the same rule for each writing smell.
 
-Inspect the product or draft before you make changes. Report only the smells that you find. Give each subagent one smell and the relevant files. Ask it to make a focused change. Review each change against the purpose and existing style. Check UI changes at the supported screen sizes. Test the main task with a keyboard. Read writing changes in context. Keep the author's point of view and meaning. Do not treat these signs as proof of AI use. Do not remove a useful feature or phrase only because it matches a pattern below.
+Inspect the product or draft before you make changes. Report only the smells that you find. Give each subagent one smell and the relevant files. Ask it to make a focused change. Review each change against the purpose and existing style. Check UI changes at the supported screen sizes. Test the main task with a keyboard. Read writing changes in context. Keep the author's point of view and meaning. Do not treat these signs as proof of AI use. Do not remove a useful feature or phrase only because it matches a pattern below. Before finishing, ask what still feels generic or obviously generated and fix only the problems supported by the draft.
 
 Use this format for each finding and its repair. Omit the image when it adds no information.
 The images in `assets/` show examples of the first nine UI smells. Open an image when the written description is unclear.
@@ -94,6 +94,36 @@ Description: Find blur and translucent panels that reduce clarity. Use solid sur
 ## Generic claims and hype
 
 Description: Find broad claims, stock slogans, long introductions, and welcome text that give no useful information. Name the task, result, or next action in plain words. Make the main action easy to find.
+
+—
+
+## Inflated significance
+
+Description: Find phrases such as "pivotal moment", "a testament to", and "setting the stage" that exaggerate importance. State what happened and why it matters without puffery.
+
+—
+
+## Vague attribution
+
+Description: Find claims introduced by "experts say", "research suggests", or similar wording. Name the source when one exists. Remove the claim when it cannot be supported.
+
+—
+
+## Empty -ing phrases
+
+Description: Find trailing phrases such as "highlighting", "showcasing", and "underscoring" that only restate the sentence. Add a real consequence or remove the phrase.
+
+—
+
+## Synonym cycling
+
+Description: Find places where one person or concept receives several names only to avoid repetition. Choose the clearest term and use it consistently.
+
+—
+
+## Chatbot filler
+
+Description: Find automatic praise, greetings, and closers such as "Great question", "Certainly", and "I hope this helps". Remove them when they do not serve the message or audience.
 
 —
 
