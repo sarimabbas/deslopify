@@ -5,10 +5,9 @@ description: Find and remove common code, user interface, and writing smells. Us
 
 # Deslopify
 
-For each code and UX smell below, use one subagent each to eliminate it.
-Use the same rule for each writing smell.
+Use exactly one subagent for each detected smell below. Do not group related smells into one assignment. This rule applies to code, UX, and writing smells.
 
-Inspect the product or draft before you make changes. Report only the smells that you find. Give each subagent one smell and the relevant files. Ask it to make a focused change. Review each change against the purpose and existing style. Check UI changes at the supported screen sizes. Test the main task with a keyboard. Read writing changes in context. Keep the author's point of view and meaning. Do not treat these signs as proof of AI use. Do not remove a useful feature or phrase only because it matches a pattern below. Before finishing, ask what still feels generic or obviously generated and fix only the problems supported by the draft.
+Inspect the product or draft before you make changes. Report only the smells that you find. Give each subagent one smell and the relevant files. Ask it to make a focused change. If smells overlap in the same passage or file, keep the diagnoses separate and apply edits sequentially to avoid conflicts. Review each change against the purpose and existing style. Check UI changes at the supported screen sizes. Test the main task with a keyboard. Read writing changes in context. Keep the author's point of view and meaning. Do not treat these signs as proof of AI use. Do not remove a useful feature or phrase only because it matches a pattern below. Before finishing, ask what still feels generic or obviously generated and fix only the problems supported by the draft.
 
 Use this format for each finding and its repair. Omit the image when it adds no information.
 The images in `assets/` show examples of the first nine UI smells. Open an image when the written description is unclear.
@@ -127,6 +126,36 @@ Description: Find automatic praise, greetings, and closers such as "Great questi
 
 —
 
+## Meandering introductions
+
+Description: Check whether the title and first three sentences tell the target reader why the piece is for them and what they will gain. Cut backstory, historical context, subtitles, bios, quotes, and images that delay that answer. Keep preamble only when it earns the reader's attention.
+
+—
+
+## Audience knowledge mismatch
+
+Description: Choose a concrete reference reader. Check every technical term and comparison against what that reader is likely to know. Explain unfamiliar ideas with familiar ones, and remove assumptions that require the reader to share the author's exact background.
+
+—
+
+## Link-dependent explanations
+
+Description: Find links or tooltips that the reader must open to understand the piece. Add the minimum explanation needed in the text. Keep links as optional paths for deeper reading, not prerequisites.
+
+—
+
+## Sequel-dependent posts
+
+Description: Find introductions and explanations that assume the reader remembers an earlier post. Make the piece stand alone by summarizing the relevant context. Link to earlier posts only as optional background.
+
+—
+
+## Excessive formality
+
+Description: Find stiff, legalistic, or needlessly indirect prose. Rewrite it in the author's natural speaking voice with shorter, direct phrasing. Preserve necessary precision and formality for the audience.
+
+—
+
 ## Excess em dashes
 
 Description: Find em dashes used for routine pauses or drama. Keep them when they help the sentence. Use a full stop or comma when it reads better.
@@ -196,6 +225,18 @@ Description: Find effects that fade, move, or restart while the user reads or wo
 ## Excess containers and metrics
 
 Description: Find cards inside cards, unused statistics, and status blocks that do not support a task. Simplify the layout. Keep data and grouping that help a decision.
+
+—
+
+## Article overflow on mobile
+
+Description: Test article pages in a narrow mobile viewport. Find text, images, tables, and code blocks that force horizontal page scrolling. Make media responsive and contain wide content without shrinking body text.
+
+—
+
+## Unreadable article typography
+
+Description: Check long-form body text for a readable font family, size, line height, measure, and colour contrast. Use browser accessibility tools to verify contrast. Prefer a highly legible typeface over faint grey text or decorative styling.
 
 —
 
